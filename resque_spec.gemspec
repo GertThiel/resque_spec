@@ -8,17 +8,16 @@ Gem::Specification.new do |s|
   s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Les Hill"]
-  s.date = %q{2010-11-24}
-  s.description = %q{RSpec matchers for Resque}
-  s.email = %q{leshill@gmail.com}
+  s.authors = ["Gert Thiel"]
+  s.date = %q{2011-03-03}
+  s.description = %q{RSpec matchers for Resque (resque-igo, MongoDB)}
+  s.email = %q{GertThiel@gmx.net}
   s.extra_rdoc_files = [
     "LICENSE",
     "README.md"
   ]
   s.files = [
     ".document",
-    ".rvmrc",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE",
@@ -37,10 +36,10 @@ Gem::Specification.new do |s|
     "spec/support/address.rb",
     "spec/support/person.rb"
   ]
-  s.homepage = %q{http://github.com/leshill/resque_spec}
+  s.homepage = %q{https://github.com/GertThiel/resque_spec}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{RSpec matchers for Resque}
+  s.summary = %q{RSpec matchers for Resque (resque-igo, MongoDB)}
   s.test_files = [
     "spec/resque_scheduler_spec_spec.rb",
     "spec/resque_spec_spec.rb",
@@ -55,16 +54,16 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<resque>, [">= 1.6.0"])
+      s.add_runtime_dependency(%q<resque-igo>, ["~> 1.12.8"])
       s.add_runtime_dependency(%q<rspec>, ["~> 1.3.0"])
       s.add_development_dependency(%q<jeweler>, [">= 1.4.0"])
     else
-      s.add_dependency(%q<resque>, [">= 1.6.0"])
+      s.add_dependency(%q<resque-igo>, ["~> 1.12.8"])
       s.add_dependency(%q<rspec>, ["~> 1.3.0"])
       s.add_dependency(%q<jeweler>, [">= 1.4.0"])
     end
   else
-    s.add_dependency(%q<resque>, [">= 1.6.0"])
+    s.add_dependency(%q<resque-igo>, ["~> 1.12.8"])
     s.add_dependency(%q<rspec>, ["~> 1.3.0"])
     s.add_dependency(%q<jeweler>, [">= 1.4.0"])
   end

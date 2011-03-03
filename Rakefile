@@ -5,12 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "resque_spec"
-    gem.summary = %Q{RSpec matchers for Resque}
-    gem.description = %Q{RSpec matchers for Resque}
-    gem.email = "leshill@gmail.com"
-    gem.homepage = "http://github.com/leshill/resque_spec"
-    gem.authors = ["Les Hill"]
-    gem.add_dependency "resque", ">= 1.6.0"
+    gem.summary = %Q{RSpec matchers for Resque (resque-igo, MongoDB)}
+    gem.description = %Q{RSpec matchers for Resque (resque-igo, MongoDB)}
+    gem.email = "GertThiel@gmx.net"
+    gem.homepage = "https://github.com/GertThiel/resque_spec"
+    gem.authors = ["Gert Thiel"]
+    gem.add_dependency "resque-igo", "~> 1.12.8"
     gem.add_dependency "rspec", "~> 1.3.0"
     gem.add_development_dependency "jeweler", ">= 1.4.0"
   end
