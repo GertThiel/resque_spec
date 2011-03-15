@@ -8,17 +8,17 @@ Gem::Specification.new do |s|
 
   s.name = 'resque_spec'
   s.version = ResqueSpec::VERSION
-  s.authors = ['Les Hill']
-  s.description = 'RSpec matchers for Resque'
-  s.summary = 'RSpec matchers for Resque'
-  s.homepage = 'http://github.com/leshill/resque_spec'
-  s.email = 'leshill@gmail.com'
+  s.authors = ['GertThiel@gmx.net']
+  s.description = 'RSpec matchers for Resque (resque-igo, MongoDB)'
+  s.summary = 'RSpec matchers for Resque (resque-igo, MongoDB)'
+  s.homepage = 'https://github.com/GertThiel/resque_spec'
+  s.email = 'GertThiel@gmx.net'
 
   s.require_path = "lib"
 
   s.files = Dir.glob("lib/**/*") + %w(LICENSE README.md Rakefile)
 
-  s.add_runtime_dependency('resque', ['>= 1.6.0'])
-  s.add_runtime_dependency('rspec', ['>= 2.5.0'])
+  s.add_runtime_dependency('resque-igo', ['~> 1.12.8'])
+  s.add_runtime_dependency('rspec', ['~> 2.5.0'])
 end
 
